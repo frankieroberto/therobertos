@@ -1,4 +1,8 @@
 Therobertos::Application.routes.draw do
+
+
+  resource :wedding, :controller => :wedding
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -1,0 +1,2 @@
+class WeddingController < ApplicationController
+end
