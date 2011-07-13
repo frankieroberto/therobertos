@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= yield :page_title %></title>
+  <% #= stylesheet_link_tag :all %>
+  <%= csrf_meta_tag %>
+  <link rel="shortcut icon" href="<%= image_path("tent.png")%>">
+</head>
+<body>
+
+
+<nav>
+  <%= link_to "Location", wedding_location_path %>
+  <%= link_to "Accommodation", wedding_accommodation_path %>
+  <%= link_to "Schedule", wedding_schedule_path %>
+</nav>
+
+<%= yield %>
+
+</body>
+</html>
