@@ -1,8 +1,14 @@
 require 'test_helper'
 
 class WeddingLocationControllerTest < ActionController::TestCase
-  # Replace this with your real tests.
-  test "the truth" do
-    assert true
+
+  context "when viewing the wedding page" do
+
+    setup { get :show }
+
+    should respond_with :success
+
   end
+
+
 end
