@@ -6,6 +6,8 @@ h1 { font-family: 'Nixie One', monospace; }
 /* Font sizes */
 h1 {font-size: 32px;}
 nav {font-size: 18px;}
+h2 {font-size: 22px;}
+p {font-size: 14px;}
 
 /* Page Layout */
 body { padding: 1em;}
