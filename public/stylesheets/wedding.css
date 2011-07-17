@@ -1,0 +1,24 @@
+
+/* Fonts */
+* {font-family: 'Quattrocento', serif;}
+h1 { font-family: 'Nixie One', monospace; }
+
+/* Font sizes */
+h1 {font-size: 32px;}
+nav {font-size: 18px;}
+
+/* Page Layout */
+body { padding: 1em;}
+.page { max-width: 800px; margin-left: auto; margin-right: auto;}
+
+/* Element layout */
+nav a {margin-right: 1em; padding-left: 25px;}
+
+/* Colours */
+nav a {color: blue;}
+
+/* Text Decoration */
+nav a {text-decoration: none;}
+
+/* Background images */
+nav a.wedding:hover {background: url('/images/tent.png') no-repeat; background-size: 20px;}

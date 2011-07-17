@@ -1,0 +1,2 @@
+module WeddingAreaHelper
+end
