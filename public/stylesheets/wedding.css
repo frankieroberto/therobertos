@@ -32,9 +32,12 @@ nav a:hover {background-color: #EFEFEF;}
 nav a {text-decoration: none;}
 
 /* Background images */
-nav a { background-repeat: no-repeat; background-position: 10px 50%;}
+nav a { background-repeat: no-repeat; background-position: 10px 45%;}
 nav a.wedding { background-image: url('/images/tent.png'); }
 nav a.location { background-image: url('/images/sign.png'); }
+nav a.area { background-image: url('/images/mountain.png'); }
+nav a.accommodation { background-image: url('/images/bed.png'); }
+nav a.schedule { background-image: url('/images/clock.png'); }
 
 
 /* Images */

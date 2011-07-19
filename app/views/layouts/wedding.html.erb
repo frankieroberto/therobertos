@@ -14,9 +14,9 @@
     <nav>
       <%= link_to "The Wedding", wedding_path, :class => :wedding %>
       <%= link_to "Location", wedding_location_path, :class => :location %>
-      <%= link_to "The Area", wedding_area_path %>
-      <%= link_to "Accommodation", wedding_accommodation_path %>
-      <%= link_to "Schedule", wedding_schedule_path %>
+      <%= link_to "The Area", wedding_area_path, :class => :area %>
+      <%= link_to "Accommodation", wedding_accommodation_path, :class => :accommodation %>
+      <%= link_to "Schedule", wedding_schedule_path, :class => :schedule %>
     </nav>
 
     <%= yield %>
