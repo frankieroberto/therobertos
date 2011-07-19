@@ -8,19 +8,32 @@ h1 {font-size: 32px;}
 nav {font-size: 18px;}
 h2 {font-size: 22px;}
 p {font-size: 14px;}
+article p.intro {font-size: 1.2em;}
+
+/* Text spacing */
+article {line-height: 1.5em;}
 
 /* Page Layout */
 body { padding: 1em;}
 .page { max-width: 800px; margin-left: auto; margin-right: auto;}
 
 /* Element layout */
-nav a {margin-right: 1em; padding-left: 25px;}
+nav { display: table; border-collapse: collapse; width: 100%;}
+nav a {padding: 10px 12px 10px 35px; margin: 0 0px 0 0; display: table-cell; text-align: center;}
+
+/* Borders */
+nav a { border: 1px solid black;}
 
 /* Colours */
-nav a {color: blue;}
+nav a {color: black;}
+nav a:hover {background-color: #EFEFEF;}
 
 /* Text Decoration */
 nav a {text-decoration: none;}
 
 /* Background images */
-nav a.wedding:hover {background: url('/images/tent.png') no-repeat; background-size: 20px;}
+nav a {background: url('/images/tent.png') no-repeat 10px 50%; background-size: 20px;}
+
+/* Images */
+figure {padding: .6em; float: right; border: 2px dashed #BBB; max-width: 40%; margin-left: 1em;}
+figure img {max-width: 100%;}
