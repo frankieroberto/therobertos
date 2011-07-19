@@ -32,7 +32,10 @@ nav a:hover {background-color: #EFEFEF;}
 nav a {text-decoration: none;}
 
 /* Background images */
-nav a {background: url('/images/tent.png') no-repeat 10px 50%; background-size: 20px;}
+nav a { background-repeat: no-repeat; background-position: 10px 50%;}
+nav a.wedding { background-image: url('/images/tent.png'); }
+nav a.location { background-image: url('/images/sign.png'); }
+
 
 /* Images */
 figure {padding: .6em; float: right; border: 2px dashed #BBB; max-width: 40%; margin-left: 1em;}
