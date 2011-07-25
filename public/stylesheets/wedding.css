@@ -1,6 +1,7 @@
 
 /* Fonts */
-* {font-family: 'Quattrocento', serif;}
+*,
+#google_directions table {font-family: 'Quattrocento', serif;}
 h1 { font-family: 'Nixie One', monospace; }
 
 /* Font sizes */
@@ -9,6 +10,11 @@ nav {font-size: 18px;}
 h2 {font-size: 22px;}
 p {font-size: 14px;}
 article p.intro {font-size: 1.2em;}
+#google_directions span.title {font-size: 14px;}
+
+/* Font weight */
+#google_directions span.title {font-weight: bold;}
+
 
 /* Text spacing */
 article {line-height: 1.5em;}
@@ -18,6 +24,8 @@ body { padding: 1em;}
 .page { max-width: 800px; margin-left: auto; margin-right: auto;}
 h2 { margin-bottom: 0.5em; margin-top: 1.5em;}
 p {margin: 0 0 1.5em 0;}
+#google_directions {width: 308px; float: right; padding: 0 1em;}
+article h3 {margin : 0;}
 
 /* Element layout */
 nav { display: table; border-collapse: collapse; width: 100%;}
@@ -25,12 +33,19 @@ nav a {padding: 10px 12px 10px 35px; margin: 0 0px 0 0; display: table-cell; tex
 
 /* Borders */
 nav a { border: 1px solid black;}
+#google_directions,
+figure { border: 2px dashed #BBB; }
 
 /* Colours */
+#google_directions span.title a,
 nav a {color: black;}
 nav a:hover {background-color: #EFEFEF;}
+a {color: #00C;}
+h3 a {color: #00A ;}
 
 /* Text Decoration */
+#google_directions a,
+article h3 a,
 nav a {text-decoration: none;}
 
 /* Background images */
@@ -43,5 +58,5 @@ nav a.schedule { background-image: url('/images/clock.png'); }
 
 
 /* Images */
-figure {padding: .6em; float: right; border: 2px dashed #BBB; max-width: 40%; margin-left: 1em;}
+figure {padding: .6em; float: right; max-width: 40%; margin-left: 1em; margin-top: 0;}
 figure img {max-width: 100%;}
