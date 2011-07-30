@@ -1,0 +1,10 @@
+
+/* Fonts */
+* {font-family: 'Quattrocento', serif;}
+h1 { font-family: 'Nixie One', monospace; }
+
+/* Font weight */
+h1 {font-weight: normal;}
+
+/* Text alignment */
+body {text-align: center;}
