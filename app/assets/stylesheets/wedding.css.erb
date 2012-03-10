@@ -1,6 +1,6 @@
 
 /* Fonts */
-*,
+body,
 #google_directions table {font-family: 'Quattrocento', serif;}
 h1 { font-family: 'Nixie One', monospace; }
 
@@ -15,7 +15,6 @@ article p.intro {font-size: 1.2em;}
 
 /* Font weight */
 #google_directions span.title {font-weight: bold;}
-
 
 /* Text spacing */
 article {line-height: 1.5em;}
@@ -36,6 +35,7 @@ nav a {padding: 10px 12px 10px 35px; margin: 0 0px 0 0; display: table-cell; tex
 nav a { border: 1px solid black;}
 #google_directions,
 figure { border: 2px dashed #BBB; }
+abbr { border-bottom: 1px black dotted;}
 
 /* Colours */
 #google_directions span.title a,
@@ -51,11 +51,11 @@ nav a {text-decoration: none;}
 
 /* Background images */
 nav a { background-repeat: no-repeat; background-position: 10px 45%;}
-nav a.wedding { background-image: url('/images/tent.png'); }
-nav a.location { background-image: url('/images/sign.png'); }
-nav a.area { background-image: url('/images/mountain.png'); }
-nav a.accommodation { background-image: url('/images/bed.png'); }
-nav a.schedule { background-image: url('/images/clock.png'); }
+nav a.wedding { background-image: url(<%= asset_path 'tent.png' %>); }
+nav a.location { background-image: url(<%= asset_path 'sign.png' %>); }
+nav a.area { background-image: url(<%= asset_path 'mountain.png' %>); }
+nav a.accommodation { background-image: url(<%= asset_path 'bed.png' %>); }
+nav a.schedule { background-image: url(<%= asset_path 'clock.png' %>); }
 
 
 /* Images */
