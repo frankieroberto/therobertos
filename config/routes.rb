@@ -8,7 +8,8 @@ Therobertos::Application.routes.draw do
     resource :area, :controller => :wedding_area, :only => :show
   end
 
-
   root :to => "homepage#show"
+
+  match '*path', :to => 'errors#not_found'
 
 end
