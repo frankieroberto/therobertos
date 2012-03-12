@@ -1,7 +1,8 @@
 
 /* Fonts */
 body,
-#google_directions table {font-family: 'Quattrocento', serif;}
+#google_directions table,
+input {font-family: 'Quattrocento', serif;}
 h1 { font-family: 'Nixie One', monospace; }
 
 /* Font sizes */
@@ -12,12 +13,16 @@ h3 {font-size: 16px;}
 p {font-size: 14px;}
 article p.intro {font-size: 1.2em;}
 #google_directions span.title {font-size: 14px;}
+input {font-size: 1em;}
 
 /* Font weight */
 #google_directions span.title {font-weight: bold;}
 
 /* Text spacing */
 article {line-height: 1.5em;}
+
+/* Text alignment */
+input[type=number] {text-align: center;}
 
 /* Page Layout */
 body { padding: 1em;}
@@ -61,3 +66,19 @@ nav a.schedule { background-image: url(<%= asset_path 'clock.png' %>); }
 /* Images */
 figure {padding: .6em; float: right; max-width: 40%; margin-left: 1em; margin-top: 0;}
 figure img {max-width: 100%;}
+
+form div.group_name {text-align: center;}
+
+fieldset {border: 1px solid black; margin-bottom: 1em;}
+legend {text-align: left; margin-left: 0; }
+
+fieldset input {margin-right: 2em;}
+fieldset input[type=radio] {margin-right: .2em;}
+input[type=text] {height: 1.2em; width: 15em; margin-left: 1em;}
+input[type=number] {width: 3em; margin-left: .5em;}
+input[type=submit] {margin-left: auto; margin-right: auto; display: block; text-align: center; width: 5em; min-width: 5em; }
+
+fieldset.options div {margin-bottom: 1em;}
+fieldset.options div div {margin-bottom: 0;}
+fieldset.options div div.selector {float: left; width: 10em;}
+fieldset.options div div.additional {margin-left: 10em;}
