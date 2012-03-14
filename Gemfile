@@ -2,13 +2,11 @@ source 'http://rubygems.org'
 
 gem "rails", "~> 3.2.2"
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
+gem 'thin'
 
 group :production do
   gem 'pg'
 end
-
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
