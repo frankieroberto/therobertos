@@ -8,12 +8,24 @@
 <%= form_tag do %>
 
   <div class="group_name">
-    <%= label_tag :group_name, "Group name" %>
+    <%= label_tag :group_name, "Your name" %>
     <%= text_field_tag :group_name, "", :placeholder => "Mr & Mrs Smith", :maxlength => 50 %>
   </div>
 
   <%= content_tag :fieldset do %>
-    <%= content_tag "legend", "Group size" %>
+    <%= content_tag "legend", "Are you coming?" %>
+
+    <%= radio_button_tag :response, :yes %>
+    <%= label_tag :response_yes, "Yes! We’ll be there." %>
+
+    <%= radio_button_tag :response, :no %>
+    <%= label_tag :response_no, "Sorry we can’t make it" %>
+
+  <% end %>
+
+
+  <%= content_tag :fieldset do %>
+    <%= content_tag "legend", "How many of you?" %>
 
     <%= label_tag :adults, "Adults" %>
     <%= number_field_tag :adults, 2, :min => 0, :max => 20 %>
