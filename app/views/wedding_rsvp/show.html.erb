@@ -1,5 +1,9 @@
 <% content_for :page_title, "RSVP for Frankie & Fiona's Wedding" %>
+<% content_for :head do %>
+  <%= javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" %>
+  <%= javascript_include_tag "rsvp" %>
 
+<% end %>
 <article>
 <h1><abbr title="Répondez s'il vous plaît">RSVP</abbr></h1>
 
@@ -24,7 +28,7 @@
   <% end %>
 
 
-  <%= content_tag :fieldset do %>
+  <%= content_tag :fieldset, :class => "details" do %>
     <%= content_tag "legend", "How many of you?" %>
 
     <%= label_tag :adults, "Adults" %>
@@ -35,7 +39,7 @@
 
   <% end %>
 
-  <%= content_tag :fieldset do %>
+  <%= content_tag :fieldset, :class => "details" do %>
     <%= content_tag :legend, "Food" %>
 
     <%= label_tag :vegetarians, "Vegetarians" %>
@@ -46,7 +50,7 @@
 
   <% end %>
 
-  <%= content_tag :fieldset, :class => :options do %>
+  <%= content_tag :fieldset, :class => "options details" do %>
     <%= content_tag :legend, "Accommodation" %>
     <p>We’ll be hiring a minibus in the evening to shuttle people back to their accommodation (unless you’re camping). To help us plan this, it’d help if you could let us know where you’re staying. If you don’t know yet, leave this blank.</p>
 
