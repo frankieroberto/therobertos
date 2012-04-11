@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <h1>An RSVP from <%= @params[:group_name] %></h1>
+
+    <% if @params[:response] == "yes" %>
+      <p>Good news, they can make it!</p>
+
+      <p>They'll be coming with <b><%= pluralize(@params[:adults].to_i, "adult") %></b> and <b><%= pluralize(@params[:kids].to_i, "child") %></b>.</p>
+
+      <p>Of those, <%= @params[:meat_eaters] %> eat meat and <%= @params[:vegetarians] %> are vegetarian.</p>
+
+      <% if @params[:accommodation_type] == "camping" %>
+        <p>They're going to be camping. They'll be bringing <b><%= pluralize(@params[:tents].to_i, "tent") %></b><%= " and they'll be staying on the Friday".html_safe if @params[:camping_friday] == "1" %>.</p>
+      <% else %>
+        <p>They'll be staying at <b><%= @params[:accommodation_name] %></b>.</p>
+      <% end %>
+    <% else %>
+      <p>Bad news, they can't make it.</p>
+    <% end %>
+  </body>
+</html>

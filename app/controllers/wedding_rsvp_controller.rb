@@ -7,6 +7,7 @@ class WeddingRsvpController < ApplicationController
   end
 
   def create
+    RsvpMailer.rsvp_email(params).deliver
     render "response"
   end
 
