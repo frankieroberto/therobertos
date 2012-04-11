@@ -5,7 +5,7 @@ class RsvpMailer < ActionMailer::Base
     @params = params
     mail(
       :to => "frankie@frankieroberto.com",
-      :subject => "Welcome to My Awesome Site",
+      :subject => "An RSVP from " + @params[:group_name],
       :cc => "fiona_r_stewart@yahoo.com"
     )
   end
