@@ -21,9 +21,11 @@ Therobertos::Application.configure do
   # Generate digests for assets URLs.
   config.assets.digest = true
 
-  # Disable Rails's static asset server
-  # In production, Apache or nginx will already do this
-  config.serve_static_assets = false
+  # Set Rails to serve static assets (as this is on Heroku)
+  config.serve_static_assets = true
+
+  # Allow proxies to cache the assets
+  config.static_cache_control = "public, max-age=31536000"
 
   # Enable serving of images, stylesheets, and javascripts from an asset server
   # config.action_controller.asset_host = "http://assets.example.com"

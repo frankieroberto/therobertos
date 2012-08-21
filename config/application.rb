@@ -15,7 +15,7 @@ module Therobertos
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
-    # This makes Devise work with Heroku
+    # This makes assets work with Heroku
     config.assets.initialize_on_precompile = false
 
     # Configure the default encoding used in templates for Ruby 1.9.
