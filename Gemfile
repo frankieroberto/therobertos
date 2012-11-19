@@ -5,9 +5,8 @@ gem "rails", "~> 3.2.2"
 
 gem 'thin'
 
-group :production do
-  gem 'pg'
-end
+gem 'pg'
+
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -19,6 +18,5 @@ end
 # put test-only gems in this group so their generators
 # and rake tasks are available in development mode:
 group :development, :test do
-  gem 'sqlite3'
   gem 'shoulda'
 end
