@@ -2,11 +2,10 @@ require 'test_helper'
 
 class WeddingAccommodationControllerTest < ActionController::TestCase
 
-  context "when viewing the wedding accommodation page" do
+  test "viewing the wedding accommodation page" do
 
-    setup { get :show }
-
-    should respond_with :success
+    get :show
+    assert_response :success
 
   end
 
