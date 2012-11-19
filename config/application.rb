@@ -3,6 +3,7 @@ require File.expand_path('../boot', __FILE__)
 require "action_controller/railtie"
 require "active_resource/railtie"
 require "rails/test_unit/railtie"
+require "sprockets/railtie"
 
 # If you have a Gemfile, require the gems listed there, including any gems
 # you've limited to :test, :development, or :production.
@@ -25,5 +26,9 @@ module Therobertos
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
+
+    # Use STDOUT as a Logger (required by Unicorn on Heroku)
+    config.logger = Logger.new(STDOUT)
+
   end
 end

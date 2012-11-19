@@ -1,7 +1,7 @@
 class ErrorsController < ApplicationController
 
   def not_found
-    raise NotFoundError
+    raise StandardError::NotFoundError
   end
 
 end
