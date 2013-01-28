@@ -16,9 +16,12 @@ module Therobertos
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+    config.whiny_nils = true
 
     # This makes assets work with Heroku
     config.assets.initialize_on_precompile = false
+
+
 
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
