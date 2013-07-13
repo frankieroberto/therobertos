@@ -1,4 +1,4 @@
-class Europe2013Controller < ApplicationController
+class BigCampController < ApplicationController
 
   def show
   end

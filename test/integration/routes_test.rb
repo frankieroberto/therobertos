@@ -6,8 +6,8 @@ class RoutesTest < ActionDispatch::IntegrationTest
     assert_routing "/wedding", { :controller => "wedding", :action => "show" }
   end
 
-  test "europe2013" do
-    assert_routing "/europe2013", { :controller => "europe2013", :action => "show" }
+  test "bigcamp" do
+    assert_routing "/bigcamp", { :controller => "big_camp", :action => "show" }
   end
 
 

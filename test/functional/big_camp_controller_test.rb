@@ -1,8 +1,8 @@
 require 'test_helper'
 
-class Europe2013ControllerTest < ActionController::TestCase
+class BigCampControllerTest < ActionController::TestCase
 
-  test "viewing the europe2013 page" do
+  test "viewing the bigcamp page" do
     get :show
     assert_response :success
   end
