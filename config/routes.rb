@@ -8,7 +8,8 @@ Therobertos::Application.routes.draw do
     resource :area, :controller => :wedding_area, :only => :show
   end
 
-  resource :bigcamp, :controller => :big_camp, :only => :show
+  resource :bigcamp, :controller => :big_camp, :only => :show, :id => 'introduction' do
+  end
 
 	match "/europe2013" => redirect("/bigcamp")
 
