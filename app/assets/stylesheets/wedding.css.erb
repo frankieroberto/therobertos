@@ -34,7 +34,8 @@ article h3 {margin : 0;}
 
 /* Element layout */
 nav { display: table; border-collapse: collapse; width: 100%;}
-nav a {padding: 10px 12px 10px 35px; margin: 0 0px 0 0; display: table-cell; text-align: center;}
+nav a {padding: 10px 12px; margin: 0 0px 0 0; display: table-cell; text-align: center;}
+nav.icons a {padding: 10px 12px 10px 35px;}
 
 /* Borders */
 nav a { border: 1px solid black;}
@@ -55,7 +56,7 @@ article h3 a,
 nav a {text-decoration: none;}
 
 /* Background images */
-nav a { background-repeat: no-repeat; background-position: 10px 45%;}
+nav.icons a { background-repeat: no-repeat; background-position: 10px 45%;}
 nav a.wedding { background-image: url(<%= asset_path 'tent.png' %>); }
 nav a.location { background-image: url(<%= asset_path 'sign.png' %>); }
 nav a.area { background-image: url(<%= asset_path 'mountain.png' %>); }
