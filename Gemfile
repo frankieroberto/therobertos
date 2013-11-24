@@ -1,9 +1,10 @@
 source 'http://rubygems.org'
-ruby "1.9.3"
+ruby "2.0.0"
 
 gem "rails", "~> 3.2.11"
 
 gem 'thin'
+gem 'rails_12factor'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
