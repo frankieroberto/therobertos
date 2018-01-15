@@ -21,6 +21,10 @@ module Therobertos
     # This makes assets work with Heroku
     config.assets.initialize_on_precompile = false
 
+    # No need for any sessions
+    config.session_store :disabled
+
+    config.secret_key_base = ENV.fetch('SECRET_KEY_BASE')
 
 
     # Configure the default encoding used in templates for Ruby 1.9.
