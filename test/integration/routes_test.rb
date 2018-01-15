@@ -7,7 +7,7 @@ class RoutesTest < ActionDispatch::IntegrationTest
   end
 
   test "bigcamp" do
-    assert_routing "/bigcamp", { :controller => "big_camp", :action => "show" }
+    assert_routing "/bigcamp", { :controller => "big_camp", :action => "show", :id => 'introduction' }
   end
 
 
