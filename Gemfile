@@ -1,13 +1,12 @@
 source 'http://rubygems.org'
-ruby "2.0.0"
+ruby "2.4.2"
 
-gem "rails", "~> 3.2.11"
+gem "rails", "~> 5.1.4"
 
-gem 'thin'
 gem 'rails_12factor'
 
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-  gem 'uglifier', '>= 1.0.3'
+  gem 'sass-rails'
+  gem 'coffee-rails'
+  gem 'uglifier'
 end

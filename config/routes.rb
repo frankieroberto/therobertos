@@ -22,10 +22,10 @@ Therobertos::Application.routes.draw do
 
   end
 
-	match "/europe2013" => redirect("/bigcamp")
+	# match "/europe2013" => redirect("/bigcamp")
 
   root :to => "homepage#show"
 
-  match '*path', :to => 'errors#not_found'
+  # match '*path', :to => 'errors#not_found'
 
 end
